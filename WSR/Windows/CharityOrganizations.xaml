@@ -1,0 +1,529 @@
+﻿<Window x:Class="WSR.Windows.CharityOrganizations"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WSR.Windows"
+        mc:Ignorable="d"
+        Title="CharityOrganizations" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Border
+            Grid.Row="0" 
+            Background="#FF505050" Grid.ColumnSpan="2"        
+            >
+        </Border>
+        <Button
+            Grid.Row="0"
+            Width="70"
+            x:Name="btnBack"
+            Height="30" 
+            BorderBrush="#FFB4B4B4" 
+            Background="#FFEBEBEB" Margin="10,10,0,10"
+            Content="Назад"
+            Foreground="#FF505050" 
+            FontFamily="Arial"
+            FontWeight="Light" 
+            FontSize="18" HorizontalAlignment="Left" Click="btnBack_Click"
+            Style="{DynamicResource MainButtonStyle}"
+            >
+        </Button>
+        <TextBlock
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Text="MARATHON SKILLS 2016" 
+            Foreground="White"
+                FontSize="22" 
+                FontFamily="Arial" 
+                FontWeight="SemiBold" Margin="100,12,0,12"
+            Grid.ColumnSpan="2"
+                >
+        </TextBlock>
+        <ScrollViewer
+            Grid.Row="1"
+            >
+            <StackPanel>
+                <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Text="Список благотворительных организаций" 
+            Foreground="#FF505050"
+            FontSize="20" 
+            FontFamily="Arial"  
+            FontWeight="Light" Margin="0,20,0,0"
+                />
+                <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Text="Это - список всех благотворительных учреждений, которые поддерживаются в Marathon Skills 2016. Спасибо за помощь вы поддерживаете их, спонсируя бегунов!" 
+            TextWrapping="Wrap"
+            Foreground="#FF505050"
+            FontSize="15" 
+            FontFamily="Arial"  
+            FontWeight="Light"
+            Width="550"
+            TextAlignment="Center" Margin="0,16,0,0"
+                />
+                <Grid>
+                    <Image Source="arise-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="ARISE" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,0,315,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="«Arise» поддерживает женщин и детей, которые пережили насилие в семье, что позволяет им  вернуться к нормальной жизни. Влияние насилия в семье имеет далеко идущие последствия, и  влияет на всю семью и может продолжаться в течение нескольких поколений. На протяжении более 20 лет, ARISE оказывает услуги, которые включают: Оценка риска и поиск безопасное проживание Предоставление информации о бытовых услуг, юридические консультации, финансовые  консультации, услуги здравоохранения и группу поддержки правовую и судебную поддержку Поддержка ARISE обеспечивает лучшее будущее для женщин и детей." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="550"
+                         Margin="173,40,2,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="aves-do-brazil-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Aves Do Brasil" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,252,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Вы можете помочь спасти птиц, которые находятся на грани исчезновения, и под угрозой 
+исчезновения в дикой природе.
+Находящиеся под угрозой исчезновения птицы включают в себя: Крапивник, вишневые горлом и 
+земельную кукушку.
+Ваши пожертвования могут помочь защитить в Бразилии регион Серрадо, уникальный район 
+саванны, где многие в видов риска, найдены." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="clara-santos-oliveira-institute-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Clara Santos Oliveira Institute" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,110,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Является неправительственной, некоммерческой организацией, основанной в Сан-Паулу. 
+Клара основал институт в 1986 году, чтобы обеспечить жильем и образование для молодых 
+людей, которые прошли через суд по делам несовершеннолетних. На сегодняшний день 
+существует пять домов в Сан-Паулу, и мы хотим, расширить и построить еще три к 2020 году." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="conquer-cancer-brazil.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Conquer Cancer Brazil" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Посвящен помощи разработки лечения и создания препаратов для лечения рака 
+путем финансирования исследований мирового класса в Бразилии. Мы поднимаем средства 
+исключительно для исследований в области профилактики, диагностики и лечения для всех видов 
+рака, в центрах по всей Бразилии. Помогите нам работать, чтобы изменить жизнь миллионов людей к 2020." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="diabetes-brazil-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Diabetes Brazil" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Стремится снизить влияние диабета посредством образования, раннего выявления и поддержки.
+Диабет является ведущей причиной слепоты у взрослых, почечной недостаточности и повышает 
+риск сердечных приступов и инсультов до 400%. Ваша поддержка помогает нам продолжать нашу спасательную работу" 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="heart-health-sao-paulo-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Heart Health São Paulo" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Уже более 50 лет, Heart Health São Paulo была посвящена спасению жизней, сделав разницу в 
+здоровье сердца наших людей. Пожертвования помогают нам финансировать ценные 
+исследования, разработать руководящие принципы для медицинских работников, поддерживать 
+ухода за пациентами и помочь людям жить здоровым образом жизни." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="human-rights-centre-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Human Rights Centre - São Paulo" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Центр по правам человека защищает и продвигает права человека в Бразилии и в бразильских 
+деятельности за рубежом. Это делается через суд, пропаганды и научных исследований. HRC
+является независимой, некоммерческой, неправительственной организацией и является 
+зарегистрированной благотворительной организацией.
+Мы работаем с общественными организациями, юридическими фирмами, ученых и других 
+специалистов в области внутренних и международных прав человека" 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="stay-pumped-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Stay Pumped" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Является благотворительной организацией, которая помогает пенсионерам профессионального 
+спортивна, которые часто испытывают проблемы, с приспособлением к жизни после спорта. 
+Многим пенсионерам, не хватает образования и жизненных необходимых навыков,. Они часто 
+имеют дополнительное бремя по полученным травмам.
+Мы работаем с профессионалами и добровольцами. Мы полагаемся на пожертвования, чтобы 
+выполнить эту необходимую работу." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="upbeat-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Upbeat SP" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Является некоммерческой организацией, которая предлагает поддержку для тех, кто 
+страдает от расстройств настроения, таких как депрессия и биполярное расстройство. Кроме того 
+мы проводим научные исследования, чтобы помочь с пониманием расстройств настроения. Наш 
+последний проект помогает использовать технологии, чтобы решить проблемы психического 
+здоровья. Мы смотрим на социальных медиа в качестве индикатора психического здоровья, а 
+также на использовании мобильных телефонов для измерения психического здоровья.
+Помогите нам продолжить большую работу мы делаем." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="wwsm-rescue-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="WWSM Rescue" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Небольшой организация WWSM посвятила себя сохранению Белый Усатой Паукообразной
+Обезьяны. Вырубка лесов и превращение земли для сельского хозяйства серьезно сказалось на 
+доме для этой обезьяны. К сожалению, на них также охотились и они были вытеснены на грань 
+вымирания. WWSM нуждается в вашей помощи, чтобы поднять профиль Белый Усатой Паукообразной
+Обезьяны в местных сообществах." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="the-red-cross-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="The Red Cross" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Помощи в период кризиса, все равно, когда она наиболее необходима, и обязательства, когда 
+другие отворачиваются. Красный Крест там для людей в потребности, независимо от того, кто вы 
+есть, независимо от того, где вы живете.
+Красного Полумесяца движение Красного Креста помогает десятки миллионов людей по всему 
+миру каждый год, и мы также заботимся для местных общин в нашей стране местного и дальнего 
+зарубежья.С миллионами добровольцев по всему миру и тысячи членов, волонтеров и сторонников, мы 
+можем достичь людей и места, как никто другой." 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="oxfam-international-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Oxfam International" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,0,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Oxfam является Международной конфедерацией 17 организаций, работающих совместно 
+с партнерами и местными сообществами в более чем 90 странах мира.
+Один человек из трех в мире живет в нищете. Oxfam решил изменить этот мир по 
+мобилизации сил народа против бедности.
+На всем земном шаре, Oxfam работает, чтобы найти практические пути, инновационные 
+для людей, чтобы вырваться из нищеты и процветать. Мы спасаем жизнь и помогаем
+восстановить средства к существованию, в период кризиса и забастовок. И мы кампания, так что 
+голоса бедных влияния на локальные и глобальные решения, которые их затрагивают.
+Во всех мы делаем, Oxfam работает с партнерскими организациями и рядом уязвимых 
+женщин и мужчин до конца несправедливости, которые вызывают бедность " 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+                <Grid>
+                    <Image Source="save-the-children-fund-logo.png"
+                           Width="120" 
+                           HorizontalAlignment="Left" Margin="30,0,0,0"
+                           
+                           />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Save the Children Fund" 
+                        Foreground="#FF505050"
+                        FontSize="20" 
+                        FontFamily="Arial"  
+                        FontWeight="Light" Margin="0,12,120,154"
+                        />
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Text="Является ведущей в мире независимой организацией для детей. Мы работаем примерно в 120 
+странах мира. Мы спасаем жизни детей; мы боремся за свои права; мы помогаем им реализовать 
+свой потенциал.
+Мы работаем, чтобы вдохновить прорывов в том, как мир относится к детям и добиться 
+немедленного и прочного изменения в их жизни. По всей нашей работы, мы преследуем 
+несколько основных значения: подотчетность, амбиции, сотрудничество, творчество и 
+целостность.
+В 2014 году мы достигли более 55 миллионов детей непосредственно через работы наших и 
+наших партнеров.
+Пожертвовать сейчас, чтобы помочь нам, как дети мира " 
+                        TextWrapping="Wrap"
+                        Foreground="#FF505050"
+                        FontSize="15" 
+                        FontFamily="Arial"  
+                        FontWeight="Light"
+                        Width="540"
+                         Margin="198,40,30,0"
+                        />
+                </Grid>
+
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+
+
+
+
+
+
+        <Border
+            Grid.Row="2" 
+            Background="#FF505050"
+             
+            >
+
+        </Border>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Text="MARATHON SKILLS 2016" Foreground="White"
+            FontSize="15" 
+            FontFamily="Arial" 
+            FontWeight="Bold" 
+            Grid.Row="2"
+            x:Name="tbStartTimer"
+                >
+
+        </TextBlock>
+
+
+    </Grid>
+</Window>

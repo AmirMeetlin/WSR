@@ -1,0 +1,139 @@
+﻿<Window x:Class="WSR.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WSR"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" MaxHeight="800" MaxWidth="450">
+    
+
+
+
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Border
+            Grid.Row="0" 
+            Background="#FF505050"
+            
+            >
+
+        </Border>
+        <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="MARATHON SKILLS 2016" Foreground="White"
+                FontSize="30" 
+                FontFamily="Arial" 
+                FontWeight="SemiBold" Margin="0,0,0,70"
+                >
+        </TextBlock>
+
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Text="Москва, Россия" Foreground="#FFB4B4B4"
+            FontSize="15" 
+            FontFamily="Arial" 
+            Margin="0,0,0,50" 
+            FontWeight="Light" 
+            FontStyle="Italic"
+                />
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Text="среда 21 октября 2016" Foreground="#FFB4B4B4"
+            FontSize="15" 
+            FontFamily="Arial" 
+            Margin="0,0,0,30" 
+            FontWeight="Light" 
+            FontStyle="Italic"
+                />
+        <Button
+            Grid.Row="1"
+            Width="350"
+            Height="60" 
+            BorderBrush="#FFB4B4B4" 
+            Background="#FFEBEBEB" Margin="0,0,0,140"
+            Content="Я хочу стать бегуном"
+            x:Name="btnRunnerCheck"
+            Foreground="#FF505050" 
+            FontFamily="Arial"
+            FontWeight="Light" 
+            FontSize="18" 
+            Style="{DynamicResource MainButtonStyle}" Click="btnRunnerCheck_Click"
+            >
+
+        </Button>
+        <Button
+            x:Name="btnSponsorship"
+            Grid.Row="1"
+            Width="350"
+            Height="50" 
+            BorderBrush="#FFB4B4B4" 
+            Background="#FFEBEBEB" Margin="0"
+            Content="Я хочу стать спонсором бегуна"
+            Foreground="#FF505050" 
+            FontFamily="Arial"
+            FontWeight="Light" 
+            FontSize="18" Click="btnSponsorship_Click"
+            Style="{DynamicResource MainButtonStyle}"
+            >
+        </Button>
+        <Button
+            x:Name="btnMoreInfo"
+            Grid.Row="1"
+            Width="350"
+            Height="50" 
+            BorderBrush="#FFB4B4B4" 
+            Background="#FFEBEBEB" Margin="0,124,0,0"
+            Content="Я хочу стать узнать больше о событии"
+            Foreground="#FF505050" 
+            FontFamily="Arial"
+            FontWeight="Light" 
+            FontSize="18"
+            Style="{DynamicResource MainButtonStyle}" Click="btnMoreInfo_Click"
+            >
+        </Button>
+        <Button
+            Grid.Row="1"
+            x:Name="btnLogin"
+            Width="100"
+            Height="40" 
+            BorderBrush="#FFB4B4B4" 
+            Background="#FFEBEBEB" Margin="0,0,10,10"
+            Content="Login"
+            Foreground="#FF505050" 
+            FontFamily="Arial"
+            FontWeight="Light" 
+            FontSize="18" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+            Style="{DynamicResource MainButtonStyle}" Click="btnLogin_Click"
+            >
+        </Button>
+
+        <Border
+            Grid.Row="2" 
+            Background="#FF505050"
+             
+            >
+
+        </Border>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Text="MARATHON SKILLS 2016" Foreground="White"
+            FontSize="15" 
+            FontFamily="Arial" 
+            FontWeight="Bold" 
+            Grid.Row="2"
+            x:Name="tbStartTimer"
+                >
+
+        </TextBlock>
+
+    </Grid>
+</Window>
